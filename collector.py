@@ -14,7 +14,7 @@ ALLOWED_IPS = [
 
 
 def gather_stats():
-   """Gathers stats via qshape"""
+    """Gathers stats via qshape"""
     while True:
         real_now = time.time()
         now = real_now - (real_now % 300)
