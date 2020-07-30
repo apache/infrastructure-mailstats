@@ -1,0 +1,11 @@
+[Unit]
+Description=MTA Routing Stats Collector
+ 
+[Service]
+Type=simple
+WorkingDirectory=/opt/mailstats
+ExecStart=/usr/local/bin/pipenv run python3 collector.py
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
