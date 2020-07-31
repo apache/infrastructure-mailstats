@@ -52,7 +52,7 @@ def gather_stats():
         except:
             file_json = []
         while len(file_json) > 288:
-            file_json.pop()
+            file_json.pop(0)
         file_json.append({
             'timestamp': int(now),
             'recipients': recipients,
