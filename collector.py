@@ -11,6 +11,7 @@ import socketserver
 ALLOWED_IPS = [
     '116.203.81.167',  # tools-vm-he-de
     '3.211.80.200',    # infra-reporting-ec2-va
+    '188.178.216.152', # testing
 ]
 
 
